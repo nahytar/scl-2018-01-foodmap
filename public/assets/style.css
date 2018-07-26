@@ -1,0 +1,19 @@
+.container-fluid {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.titulo {
+  color: orangered;
+  display: block;
+  margin-top:20%;
+  margin-left: 7%;
+  text-align: center;
+}
+
+.foodmap {
+  color: orangered;
+  display: block;
+  text-align: center;
+}
