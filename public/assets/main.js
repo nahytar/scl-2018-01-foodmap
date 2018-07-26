@@ -20,7 +20,7 @@ setTimeout(() => {
   map = new H.Map(
     document.getElementById('mapContainer'),
     maptypes.normal.map, {
-      zoom: 16,
+      zoom: 15,
       center: {
         lng: currentPosition.coords.longitude,
         lat: currentPosition.coords.latitude,

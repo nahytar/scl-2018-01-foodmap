@@ -1,41 +1,32 @@
-[debug] [2018-07-26T12:24:32.949Z] ----------------------------------------------------------------------
-[debug] [2018-07-26T12:24:32.951Z] Command:       /home/nahytar/.nvm/versions/node/v8.11.3/bin/node /home/nahytar/.nvm/versions/node/v8.11.3/bin/firebase serve
-[debug] [2018-07-26T12:24:32.951Z] CLI Version:   4.0.0
-[debug] [2018-07-26T12:24:32.951Z] Platform:      linux
-[debug] [2018-07-26T12:24:32.951Z] Node Version:  v8.11.3
-[debug] [2018-07-26T12:24:32.951Z] Time:          Thu Jul 26 2018 08:24:32 GMT-0400 (-04)
-[debug] [2018-07-26T12:24:32.951Z] ----------------------------------------------------------------------
+[debug] [2018-07-26T13:57:45.489Z] ----------------------------------------------------------------------
+[debug] [2018-07-26T13:57:45.491Z] Command:       /home/nahytar/.nvm/versions/node/v8.11.3/bin/node /home/nahytar/.nvm/versions/node/v8.11.3/bin/firebase serve
+[debug] [2018-07-26T13:57:45.491Z] CLI Version:   4.0.0
+[debug] [2018-07-26T13:57:45.491Z] Platform:      linux
+[debug] [2018-07-26T13:57:45.491Z] Node Version:  v8.11.3
+[debug] [2018-07-26T13:57:45.491Z] Time:          Thu Jul 26 2018 09:57:45 GMT-0400 (-04)
+[debug] [2018-07-26T13:57:45.491Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-07-26T12:24:32.959Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-07-26T12:24:32.960Z] > authorizing via signed-in user
-[debug] [2018-07-26T12:24:32.962Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-07-26T12:24:32.962Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/iwTbvwFpxmb4ev4OoBWHMApD5JsCQBmyIHSCxSnNO0Q',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Thu Jul 26 2018 08:24:32 GMT-0400 (-04)
-[debug] [2018-07-26T12:24:33.172Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-26T12:24:33.302Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/foodmap-33092  
+[debug] [2018-07-26T13:57:45.499Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-26T13:57:45.500Z] > authorizing via signed-in user
+[debug] [2018-07-26T13:57:45.502Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/foodmap-33092  
   
- Thu Jul 26 2018 08:24:33 GMT-0400 (-04)
-[debug] [2018-07-26T12:24:34.536Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-26T12:24:34.539Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/foodmap-33092/tokens  
+ Thu Jul 26 2018 09:57:45 GMT-0400 (-04)
+[debug] [2018-07-26T13:57:46.576Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-26T13:57:46.577Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/foodmap-33092/tokens  
   
- Thu Jul 26 2018 08:24:34 GMT-0400 (-04)
-[debug] [2018-07-26T12:24:35.397Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-26T12:24:35.399Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/foodmap-33092  
+ Thu Jul 26 2018 09:57:46 GMT-0400 (-04)
+[debug] [2018-07-26T13:57:50.375Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-26T13:57:50.376Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/foodmap-33092  
   
- Thu Jul 26 2018 08:24:35 GMT-0400 (-04)
-[debug] [2018-07-26T12:24:36.512Z] <<< HTTP RESPONSE 200
+ Thu Jul 26 2018 09:57:50 GMT-0400 (-04)
+[debug] [2018-07-26T13:57:51.481Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/proyectos/scl-2018-01-foodmap'...
 [info] 
-[debug] [2018-07-26T12:24:36.518Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/592560197511/clients/_:getWebAppConfig  
+[debug] [2018-07-26T13:57:51.484Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/592560197511/clients/_:getWebAppConfig  
   
- Thu Jul 26 2018 08:24:36 GMT-0400 (-04)
-[debug] [2018-07-26T12:24:36.957Z] <<< HTTP RESPONSE 200
+ Thu Jul 26 2018 09:57:51 GMT-0400 (-04)
+[debug] [2018-07-26T13:57:51.966Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 
