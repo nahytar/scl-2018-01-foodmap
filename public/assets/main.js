@@ -48,6 +48,7 @@ document.getElementById("select").addEventListener('change', () => {
     searchResult = data;
     map.removeObjects(markers);
     markers = [];
+    cleanDescription();
     searchResult.results.items.forEach((item) => {
       // Create an icon, an object holding the latitude and longitude, and a marker:
       var icon = new H.map.Icon('assets/img/resto.png')
@@ -80,4 +81,8 @@ document.getElementById("select").addEventListener('change', () => {
 const printResult = (coords) => {
   respuestas.innerHTML += `<p>${JSON.stringify(coords.name)}
   direccion: ${JSON.stringify(coords.direccion)}</p>`;
+}
+
+const cleanDescription = () => {
+  respuestas.innerHTML = '';
 }
