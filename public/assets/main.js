@@ -26,8 +26,10 @@ setTimeout(() => {
         lat: currentPosition.coords.latitude,
         useCIT: true, // para que funcione https en firebase
         useHTTPS: true  // para que funcione https en firebase
+
       }
     });
+    var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 }, 2000)
 
 var search = new H.places.Search(platform.getPlacesService()),
