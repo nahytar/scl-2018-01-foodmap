@@ -53,19 +53,20 @@ document.getElementById("select").addEventListener('change', () => {
       var icon = new H.map.Icon('assets/img/resto.png')
       let coords = {
         lng: item.position[1],
-        lat: item.position[0]
+        lat: item.position[0],
+        name: item.title,
+        direccion: item.vicinity,
+        hours: item.openingHours
       };
       let marker = new H.map.Marker(coords, {
         icon: icon
       });
-
-      // marker.addEventListener('click', () => {
-      //   alert("Funciona")
-      // })
-
       markers.push(marker);
+      printResult(coords);
       map.addObject(marker);
     })
+
+  
   }
   // Define a callback function to handle errors:
   function onError(data) {
@@ -74,4 +75,9 @@ document.getElementById("select").addEventListener('change', () => {
   // Run a search request with parameters, headers (empty), and
   // callback functions:
   search.request(params, {}, onResult, onError);
-})
+});
+
+const printResult = (coords) => {
+  respuestas.innerHTML += `<p>${JSON.stringify(coords.name)}
+  direccion: ${JSON.stringify(coords.direccion)}</p>`;
+}
