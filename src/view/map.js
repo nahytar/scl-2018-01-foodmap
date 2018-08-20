@@ -18,4 +18,18 @@ const render = () => {
   }
 }
 
-export default { render }
+const addMarker = (coords) => {
+  var icon = new H.map.Icon('assets/img/resto.png')
+  let marker = new H.map.Marker(coords, {
+    icon: icon
+  });
+  // printResult(coords);
+  map.addObject(marker);
+  return marker;
+}
+
+const removeMarkers = () => {
+  map.removeObjects(model.getMarkers());
+}
+
+export default { render, removeMarkers, addMarker }

@@ -11,4 +11,13 @@ const draw = () => {
   view.render();
 }
 
-export default { setPosition, draw }
+const cleanMarkers = () => {
+ view.removeMarkers();
+ model.cleanMarkers();
+}
+
+const addMarker = (coords) => {
+  model.addMarker(view.addMarker(coords));
+}
+
+export default { setPosition, draw, cleanMarkers, addMarker }
