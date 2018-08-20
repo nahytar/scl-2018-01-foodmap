@@ -5,6 +5,7 @@ let map = null;
 const init = () => {
   // Obtain the default map types from the platform object:
   const maptypes = model.getPlatform().createDefaultLayers();
+  // Instantiate (and display) a map object:
   map = new H.Map(
     document.getElementById('mapContainer'),
     maptypes.normal.map, model.getConfiguration());

@@ -2,12 +2,15 @@ import mapModel from '../model/map'
 
 const data = {
   search: new H.places.Search(mapModel.getPlatform().getPlacesService()),
-  searchResult: null, 
-  error: null
+  searchResult: null
 }
 
 const getSearch = () => {
   return data.search;
 }
 
-export default { getSearch }
+const setSearchResult = (results) => {
+  data.searchResult = results;
+}
+
+export default { getSearch, setSearchResult }

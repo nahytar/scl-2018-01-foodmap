@@ -1,6 +1,7 @@
 import model from '../model/search'
 import mapModel from '../model/map'
 import mapController from '../controller/map'
+import view from '../view/search'
 
 const find = () => {
   // Define search parameters:
@@ -18,7 +19,7 @@ const find = () => {
 // Define a callback function to handle data on success:
 const onResult = (searchResult) => {
   mapController.cleanMarkers();
-  // cleanDescription();
+  view.clear();
   searchResult.results.items.forEach((item) => {
     // Create an icon, an object holding the latitude and longitude, and a marker:
     let coords = {
@@ -29,9 +30,8 @@ const onResult = (searchResult) => {
       hours: item.openingHours
     };
     mapController.addMarker(coords);
-  })
-
-
+    view.render(coords);
+  });
 }
 // Define a callback function to handle errors:
 const onError = (error) => {
