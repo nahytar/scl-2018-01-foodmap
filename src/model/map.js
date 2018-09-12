@@ -4,13 +4,14 @@ const data = {
     center: {
       lng: null,
       lat: null,
-      useCIT: true, // para que funcione https en firebase
-      useHTTPS: true  // para que funcione https en firebase
+
     }
   },
   platform: new H.service.Platform({
     'app_id': 'wPJPKvnkW9RvWEhqFwQf',
-    'app_code': 'nOWzrH23UUts9L7nlypBpA'
+    'app_code': 'nOWzrH23UUts9L7nlypBpA',
+    useCIT: true, // para que funcione https en firebase
+    useHTTPS: true  // para que funcione https en firebase
   }),
   markers: []
 }
